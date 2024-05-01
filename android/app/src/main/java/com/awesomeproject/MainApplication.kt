@@ -37,8 +37,8 @@ class MainApplication : Application(), ReactApplication {
 
   override fun onCreate() {
     super.onCreate()
-    ActivityLifecycleCallback.register(this) // Add this line
-    CleverTapAPI.setDebugLevel(CleverTapAPI.LogLevel.DEBUG) // Add this line
+    ActivityLifecycleCallback.register(this) 
+    CleverTapAPI.setDebugLevel(CleverTapAPI.LogLevel.DEBUG)
     SoLoader.init(this, false)
     if (BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
       // If you opted-in for the New Architecture, we load the native entry point for this app.
